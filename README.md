@@ -1,2 +1,2 @@
 # SET08801-2025-6-TR2-001---Web-Technologies
-A statically hosted fun web project built using HTML, CSS, and JavaScript as part of the SET08101 Web Technologies coursework. The site focuses on interactive, client-side functionality and is deployed using GitHub Pages.
+A small, statically hosted web activity created for practice and experimentation with HTML, CSS, and JavaScript. The project supports SET08801 Web Technologies unit activities, focusing on learning core web concepts such as semantic HTML, hyperlinks, and basic client-side behaviour, rather than formal coursework assessment
