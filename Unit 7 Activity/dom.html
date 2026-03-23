@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 7 - Interacting with the DOM</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="dom.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Interacting with the DOM</h1>
+    <p>Examples of updating HTML, appending elements, and changing CSS with JavaScript.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Single Message</h2>
+      <div class="button-row">
+        <button type="button" id="message-button">Add Message</button>
+      </div>
+      <p id="output-demo" class="output"></p>
+    </section>
+
+    <section class="card">
+      <h2>Append Paragraphs</h2>
+      <div class="button-row">
+        <button type="button" id="append-button">Append HELLO WORLD</button>
+      </div>
+      <div id="output" class="output"></div>
+    </section>
+
+    <section class="card">
+      <h2>Ordered List Example</h2>
+      <div class="button-row">
+        <button type="button" id="list-button">Add List Item</button>
+        <button type="button" id="reset-list-button">Reset List</button>
+      </div>
+      <ol id="ordered-output"></ol>
+    </section>
+
+    <section class="card">
+      <h2>Colour Toggle</h2>
+      <p id="colour-message" class="status">I am red</p>
+      <div class="button-row">
+        <button type="button" id="colour-button">Change Colour</button>
+      </div>
+      <p>This version cycles through four colours and updates the message to match.</p>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 7 index</a></p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #1f2933;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  padding-bottom: 0.5rem;
+}
+
+nav ul,
+section ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+button,
+.link-button {
+  display: inline-block;
+  border: none;
+  border-radius: 8px;
+  background: #1266f1;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+button:hover,
+.link-button:hover {
+  background: #0b4fc2;
+}
+
+.output {
+  min-height: 2rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: #eef4ff;
+  border: 1px solid #c9dbff;
+}
+
+.mono {
+  font-family: Consolas, monospace;
+  white-space: pre-wrap;
+}
+
+.tall-content {
+  line-height: 1.8;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.room-panel {
+  background: #132238;
+  color: #f8fafc;
+}
+
+.room-panel .output {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #d9e2ec;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+code {
+  background: #e5edf8;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}

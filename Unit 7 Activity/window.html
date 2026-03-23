@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 7 - Interacting with the Window</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="window.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Interacting with the Browser Window</h1>
+    <p>Examples of window properties, scrolling, navigator data, location data, and history access.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Window Properties</h2>
+      <div class="button-row">
+        <button type="button" id="properties-button">List Window Properties</button>
+      </div>
+      <div id="properties-output" class="output mono"></div>
+    </section>
+
+    <section class="card">
+      <h2>Navigator, Location, and History</h2>
+      <table>
+        <tbody>
+          <tr>
+            <th>Navigator</th>
+            <td id="navigator-output"></td>
+          </tr>
+          <tr>
+            <th>Location</th>
+            <td id="location-output"></td>
+          </tr>
+          <tr>
+            <th>History Length</th>
+            <td id="history-output"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Window Controls</h2>
+      <div class="button-row">
+        <button type="button" id="scroll-button">Scroll Down 100px</button>
+        <button type="button" id="open-button">Open Example Window</button>
+      </div>
+      <p>Use the browser console to try <code>window.history.back()</code>, <code>window.history.forward()</code>, or <code>window.history.go(-1)</code>.</p>
+    </section>
+
+    <section class="card tall-content" id="scroll-demo">
+      <h2>Scrollable Content</h2>
+      <div id="scroll-output" class="output"></div>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 7 index</a></p>
+    </section>
+  </main>
+</body>
+</html>
