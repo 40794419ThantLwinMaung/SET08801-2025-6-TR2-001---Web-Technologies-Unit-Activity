@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 9 - Audio Synthesis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="synthesis.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Audio Synthesis with AudioContext</h1>
+    <p>This page creates sound from scratch and also includes a simple piano built from note buttons.</p>
+  </header>
+
+  <main>
+    <section class="card grid">
+      <div>
+        <h2>Oscillator Controls</h2>
+        <label for="wave-type">Wave Type</label>
+        <select id="wave-type">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="triangle">Triangle</option>
+          <option value="sawtooth">Sawtooth</option>
+        </select>
+
+        <label for="frequency">Frequency</label>
+        <input type="range" id="frequency" min="110" max="880" step="1" value="220">
+
+        <div class="button-row">
+          <button type="button" id="start-tone-button">Start Tone</button>
+          <button type="button" id="mute-button">Toggle Mute</button>
+          <button type="button" id="stop-tone-button">Stop Tone</button>
+        </div>
+
+        <div id="synth-status" class="output"></div>
+      </div>
+
+      <div>
+        <h2>Simple Piano</h2>
+        <div class="piano" id="piano-keys">
+          <button type="button" data-note="261.63">C</button>
+          <button type="button" data-note="293.66">D</button>
+          <button type="button" data-note="329.63">E</button>
+          <button type="button" data-note="349.23">F</button>
+          <button type="button" data-note="392.00">G</button>
+          <button type="button" data-note="440.00">A</button>
+          <button type="button" data-note="493.88">B</button>
+          <button type="button" data-note="523.25">C5</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 9 index</a></p>
+    </section>
+  </main>
+</body>
+</html>

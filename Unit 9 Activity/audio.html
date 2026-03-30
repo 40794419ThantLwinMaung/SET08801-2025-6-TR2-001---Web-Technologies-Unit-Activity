@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 9 - Audio Element</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="audio.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Playing Audio on a Web Page</h1>
+    <p>This example uses a generated audio clip loaded into an <code>audio</code> element so the page works without an external MP3 file.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <audio id="my-audio" controls></audio>
+      <div class="button-row">
+        <button type="button" id="play-button">Play</button>
+        <button type="button" id="pause-button">Pause</button>
+        <button type="button" id="loop-button">Toggle Loop</button>
+        <button type="button" id="mute-button">Toggle Mute</button>
+        <button type="button" id="controls-button">Toggle Controls</button>
+      </div>
+
+      <label for="start-time">Start time in seconds</label>
+      <input type="range" id="start-time" min="0" max="1.8" step="0.1" value="0">
+
+      <div class="button-row">
+        <button type="button" id="jump-button">Jump to Selected Time</button>
+      </div>
+
+      <div id="audio-status" class="output"></div>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 9 index</a></p>
+    </section>
+  </main>
+</body>
+</html>

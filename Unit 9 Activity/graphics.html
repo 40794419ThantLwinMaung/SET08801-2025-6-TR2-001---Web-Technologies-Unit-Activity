@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 9 - Canvas Graphics</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="graphics.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Canvas and the 2D Graphics Context</h1>
+    <p>This page draws rectangles, lines, a smiley face, and a simple house scene using the HTML canvas.</p>
+  </header>
+
+  <main>
+    <section class="card grid">
+      <div>
+        <h2>Canvas Demo</h2>
+        <canvas id="demo-canvas" width="520" height="360"></canvas>
+      </div>
+
+      <div>
+        <h2>Drawing Controls</h2>
+        <div class="button-row">
+          <button type="button" id="rect-button">Draw Rectangle</button>
+          <button type="button" id="smiley-button">Draw Smiley</button>
+          <button type="button" id="lines-button">Draw Lines</button>
+          <button type="button" id="scene-button">Draw House Scene</button>
+          <button type="button" id="clear-button">Clear Canvas</button>
+        </div>
+        <div id="graphics-status" class="output"></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 9 index</a></p>
+    </section>
+  </main>
+</body>
+</html>
