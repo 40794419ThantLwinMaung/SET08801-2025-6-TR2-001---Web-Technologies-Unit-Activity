@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 8 - Filesystem Persistence</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="filesystem.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Persist Data to the Filesystem</h1>
+    <p>This page exports browser data as a JSON file and can also read a saved JSON file back in.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Save Data as JSON</h2>
+      <label for="save-name">Name</label>
+      <input type="text" id="save-name" placeholder="Enter a name">
+
+      <label for="save-score">Score</label>
+      <input type="number" id="save-score" value="0">
+
+      <label for="save-notes">Notes</label>
+      <textarea id="save-notes" placeholder="Write a few notes"></textarea>
+
+      <div class="button-row">
+        <button type="button" id="download-button">Download JSON File</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Load a JSON File</h2>
+      <input type="file" id="file-input" accept="application/json,.json">
+      <pre id="file-output" class="output"></pre>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 8 index</a></p>
+    </section>
+  </main>
+</body>
+</html>

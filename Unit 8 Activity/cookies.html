@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 8 - Cookies</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="cookies.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Cookies</h1>
+    <p>This page stores a user's name and mood in cookies, then uses that data to personalise a message.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Personalisation Form</h2>
+      <form id="cookie-form">
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="mood">Mood</label>
+        <select id="mood" name="mood">
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="excited">Excited</option>
+          <option value="tired">Tired</option>
+        </select>
+
+        <div class="button-row">
+          <button type="submit">Save Cookie</button>
+          <button type="button" id="load-cookie-button">Load Cookie</button>
+          <button type="button" id="delete-cookie-button">Delete Cookie</button>
+        </div>
+      </form>
+      <div id="cookie-message" class="output"></div>
+    </section>
+
+    <section class="card">
+      <h2>Cookie String</h2>
+      <pre id="cookie-output" class="output"></pre>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 8 index</a></p>
+    </section>
+  </main>
+</body>
+</html>

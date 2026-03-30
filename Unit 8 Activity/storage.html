@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 8 - Web Storage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="storage.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Web Storage</h1>
+    <p>This page demonstrates both <code>localStorage</code> and <code>sessionStorage</code>.</p>
+  </header>
+
+  <main>
+    <section class="card grid">
+      <div>
+        <h2>Local Storage Profile</h2>
+        <label for="student-name">Student Name</label>
+        <input type="text" id="student-name">
+
+        <label for="student-module">Module</label>
+        <input type="text" id="student-module" value="Web Tech">
+
+        <div class="button-row">
+          <button type="button" id="save-local-button">Save to Local Storage</button>
+          <button type="button" id="load-local-button">Load Local Storage</button>
+          <button type="button" id="clear-local-button">Clear Local Storage</button>
+        </div>
+      </div>
+
+      <div>
+        <h2>Session Storage Note</h2>
+        <label for="session-note">Temporary Note</label>
+        <textarea id="session-note"></textarea>
+
+        <div class="button-row">
+          <button type="button" id="save-session-button">Save to Session Storage</button>
+          <button type="button" id="load-session-button">Load Session Storage</button>
+          <button type="button" id="clear-session-button">Clear Session Storage</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Status</h2>
+      <div id="storage-status" class="output"></div>
+    </section>
+
+    <section class="card">
+      <h2>Stored Data</h2>
+      <pre id="storage-output" class="output"></pre>
+    </section>
+
+    <section class="card">
+      <p><a href="index.html">Back to Unit 8 index</a></p>
+    </section>
+  </main>
+</body>
+</html>
